@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Tracksms"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Trackwise project"
+	}
+}

@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #eeeff2;
+  flex-direction: column; /* Allows better stacking on smaller screens */
+}
+
+.container {
+  text-align: center;
+  width: 90%; /* Prevents overflow on small screens */
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 5vw; /* Responsive font size */
+  color: #036;
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.box {
+  flex: 1 1 150px; /* Allows boxes to resize dynamically */
+  max-width: 200px;
+  min-width: 120px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #96bae8;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0e0f0f;
+  background-color: #96bae8;
+  transition: transform 0.3s;
+  font-size: 18px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background-color: rgb(26, 110, 193);
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .box-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  h1 {
+      font-size: 8vw; /* Adjusts size on smaller screens */
+  }
+}

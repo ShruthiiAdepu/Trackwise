@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  padding-top: 90px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow stacking on small screens */
+  text-align: center;
+  gap: 20px;
+}
+
+/* Illustration Image */
+.illustration {
+  width: 40%; /* Make it responsive */
+  max-width: 400px; /* Prevent it from getting too large */
+  height: auto;
+  margin-right: 50px;
+}
+
+/* Expense Form */
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #072271;
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8dbcf2;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #176aae;
+  color: white;
+}
+
+/* Back to Home Button */
+a.back-home {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  background-color: #8dbcf2;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+a.back-home:hover {
+  background-color: #176aae;
+  color: white;
+}
+
+/* 🔹 Responsive Fixes */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+  }
+
+  .illustration {
+    width: 60%; /* Reduce size for better fit */
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    max-width: 90%; /* Adjust form width for mobile */
+    padding: 30px;
+  }
+
+  .back-home {
+    position: relative; /* No absolute positioning */
+    margin-bottom: 20px; /* Add spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .illustration {
+    width: 80%; /* Further reduce size for smaller devices */
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    font-size: 14px; /* Adjust font size for better fit */
+  }
+
+  .back-home {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

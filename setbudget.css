@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+/* Illustration Styling */
+.illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.illustration img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Budget Section */
+.budget-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align for mobile */
+  padding-left: 20px;
+  padding-top: 50px;
+  text-align: center; /* Centers text for better readability */
+}
+
+.budget-container h2 {
+  font-size: 45px;
+  color: #036;
+  margin-bottom: 20px;
+}
+
+#budgetForm input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 2px solid #96bae8;
+  border-radius: 5px;
+  width: 90%; /* Make it responsive */
+}
+
+#budgetForm button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #aed6f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#budgetForm button:hover {
+  background-color: rgb(26, 110, 193);
+  color: white;
+}
+
+/* Quote Section */
+.quote {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.quote h1 {
+  font-size: 22px; /* Reduce font size for better fit */
+  color: #036579;
+  line-height: 1.4;
+}
+
+/* Back to Home Button */
+.back-home {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  padding-bottom: 40px;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #036;
+  font-size: 18px;
+  border: 1px solid #036;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-home a:hover {
+  background-color: rgb(36, 94, 153);
+  color: #fff;
+}
+
+/* 🔹 Responsive Fixes for Smaller Screens */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack elements instead of row */
+    text-align: center;
+  }
+
+  .illustration {
+    padding-top: 20px;
+  }
+
+  .illustration img {
+    max-width: 60%; /* Adjust image size */
+  }
+
+  .budget-section {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .budget-container h2 {
+    font-size: 35px;
+  }
+
+  .quote h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .illustration img {
+    max-width: 70%; /* Further reduce image size */
+  }
+
+  .budget-container h2 {
+    font-size: 30px;
+  }
+
+  #budgetForm input {
+    width: 100%;
+  }
+
+  .quote h1 {
+    font-size: 16px;
+  }
+}

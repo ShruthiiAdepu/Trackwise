@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+h1, h2 {
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+  
+.budget-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #9cc9f0e0;
+    width: 80%;
+    text-align: center;
+}
+  
+.budget-container p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+  
+.expense-list {
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+  
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+  
+.expense-item:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+.expense-item:hover {
+    background-color: #f1f1f1;
+}
+  
+.expense-category, .expense-amount, .expense-date {
+    font-weight: bold;
+    color: #333;
+    text-align: left; 
+}
+  
+.expense-amount {
+    color: #16025a;
+    font-weight: bold;
+    text-align: right;
+    min-width: 100px; 
+}
+  
+.expense-date {
+    color: #555;
+    font-size: 0.9em;
+    text-align: center; 
+}
+a {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1em;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: #333333;
+  }

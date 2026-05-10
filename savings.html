@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Goals</title>
+    <link rel="stylesheet" href="./savings.css">
+</head>
+<body>
+    <h1>Track Your Saving Goals</h1>
+    
+    <div class="container">
+        <!-- Form to add new goal -->
+        <div class="form-container">
+            <h2>Add New Goal</h2>
+            <div>
+                <label for="goal-name">Goal Name:</label>
+                <input type="text" id="goal-name" placeholder="Enter your goal" />
+            </div>
+            <div>
+                <label for="goal-amount">Goal Amount:</label>
+                <input type="number" id="goal-amount" placeholder="Enter goal amount" />
+            </div>
+            <button id="set-goal">Set Goal</button>
+        </div>
+
+        <!-- Goals List Display -->
+        <div class="goal-list-container">
+            <h2>Current Goals</h2>
+            <div id="goal-list">
+                <div class="goal-item">
+                    <span>Goal Name: Buy Laptop</span>
+                    <span class="goal-amount">Amount: ₹50000</span>
+                </div>
+                <!-- Additional goals will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to go back to the main page -->
+    <a href="index.html">Back to Home</a>
+
+    <script src="savings.js"></script>
+</body>
+</html>
